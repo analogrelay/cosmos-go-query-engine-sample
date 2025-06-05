@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/Azure/azure-cosmos-client-engine/go/azcosmoscx"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos"
 	"github.com/spf13/pflag"
@@ -124,8 +125,12 @@ func main() {
 	fmt.Printf("Against endpoint: %s\n", *endpoint)
 	fmt.Printf("Database: %s, Container: %s\n\n", *database, *container)
 
+	queryOptions := azcosmos.QueryOptions{
+		QueryEngine: azcosmoscx.NewQueryEngine(),
+	}
+
 	// Execute the query
-	pager := containerClient.NewQueryItemsPager(query, azcosmos.NewPartitionKey(), nil)
+	pager := containerClient.NewQueryItemsPager(query, azcosmos.NewPartitionKey(), &queryOptions)
 
 	// Process the results
 	fmt.Println("Results:")
