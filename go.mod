@@ -3,7 +3,7 @@ module github.com/analogrelay/cosmos-go-query-engine-sample
 go 1.24.2
 
 require (
-	github.com/Azure/azure-cosmos-client-engine/go/azcosmoscx v0.0.2
+	github.com/Azure/azure-cosmos-client-engine/go/azcosmoscx v0.0.5
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.10.0
 	github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos v1.5.0-beta.0
 	github.com/spf13/pflag v1.0.6
