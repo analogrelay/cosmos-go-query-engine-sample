@@ -98,10 +98,9 @@ go run main.go --database SampleDB --container SampleContainer "SELECT * FROM c"
 
 - C Compiler Required: Some Go dependencies require a C compiler. Make sure you have build-essential installed.
 - Emulator Limitations: The Cosmos DB Emulator is officially supported on Windows. The Linux Docker version is in preview and may have limitations.
-- Database/Container: The sample will attempt to create the database and container if they do not exist.
 
 ## Troubleshooting
 
 - If you see connection errors, ensure the emulator is running and accessible on <https://localhost:8081>.
-- If you see "Owner resource does not exist", ensure the database and container exist (the sample will create them if missing).
+- If you see "Owner resource does not exist", ensure the database and container exist.
 - For certificate issues, see [the official repo.](https://github.com/Azure/azure-cosmos-db-emulator-docker)
