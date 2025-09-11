@@ -3,7 +3,7 @@ module github.com/analogrelay/cosmos-go-query-engine-sample
 go 1.24.2
 
 require (
-	github.com/Azure/azure-cosmos-client-engine/go/azcosmoscx v0.0.5
+	github.com/Azure/azure-cosmos-client-engine/go/azcosmoscx v0.0.6
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.10.0
 	github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos v1.5.0-beta.0
 	github.com/spf13/pflag v1.0.6
@@ -17,7 +17,13 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.2.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
+	github.com/openai/openai-go v1.12.0 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
+	github.com/sashabaranov/go-openai v1.41.1 // indirect
+	github.com/tidwall/gjson v1.14.4 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.1 // indirect
+	github.com/tidwall/sjson v1.2.5 // indirect
 	golang.org/x/crypto v0.38.0 // indirect
 	golang.org/x/net v0.40.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
